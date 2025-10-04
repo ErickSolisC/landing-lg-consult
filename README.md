@@ -4,7 +4,7 @@
 
 ---
 
-## Versión
+## Versión 1.0.0
 
 **Prueba técnica — Erick Solis**
 
