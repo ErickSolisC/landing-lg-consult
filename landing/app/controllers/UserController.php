@@ -26,15 +26,20 @@ class UserController {
             echo json_encode(['success' => false, 'message' => 'Datos inválidos']);
             return;
         }
+        
+        $requestToken = bin2hex(random_bytes(16));
+        $data['request_token'] = $requestToken;
 
         try {
             $result = $this->userService->register($data);
 
-            if (!isset($result['success'])) {
-                $result = ['success' => false, 'message' => 'Error al registrar'];
-            }
+            $response = [
+                'success' => $result['success'] ?? false,
+                'message' => $result['message'] ?? 'Error al registrar',
+                'request_token' => $requestToken
+            ];
 
-            echo json_encode($result);
+            echo json_encode($response);
         } catch (Exception $e) {
             echo json_encode(['success' => false, 'message' => $e->getMessage()]);
         }
