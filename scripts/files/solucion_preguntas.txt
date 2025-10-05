@@ -1,0 +1,58 @@
+Preguntas teóricas:
+1. Explica la diferencia entre git merge y git rebase.
+    -git merce: Basicamente cambina dos ramas creando un merge
+    -git rebase: Basicamente aplica los commits de una rama parametrizando el historial.
+
+2. Explique que hace git pull y git fetch
+    -git pull: Trae los cambios del repositorio y los combina en la rama local
+    -git fetch: Trae los cambios del repo remoto pero este no cruza los cambios con la rama local.
+
+3. ¿Qué significa un conflicto en Git y cómo lo resolverías?
+    - Conflicto se da cuando dos ramas han modfiicado la misma linea de un archivo.
+        - Para resolver esto se debe validar que cambios se aplicaran para mantener la version correcta
+        - Luego se guardan los cambios y se suben.
+    Adicional existen varias formas de poder resolver pero inicial mente para no crear ramas alternas esta es la solucion mas comun.
+
+
+Sección 1: HTML, CSS y JS
+1. ¿Cuál es la diferencia entre etiquetas semánticas y no semánticas en HTML?
+    - Semanticas son las que se consideran estructurales como Header,Footer,Content
+    - No Semanticas son aqueas deribadas como div span
+
+2. ¿Qué ventajas tiene usar Flexbox o Grid en CSS?
+    - Facilita la alineacion y la distribucion de los elementos
+    - Flexibiliad para disenos resonsivos sin mucha conplejidad
+
+3. ¿Cuál es la diferencia entre == y === en JavaScript?
+    - == en JavaScript tiene como funcion comparar valores sin importar su tipo de valor no es tan estricto.
+    - === este es mas estricto porque a diferencia de == este puede validar el valor y su tipo y esto hace que sea mas robusta la validacion.
+
+4. Explica qué es el DOM y cómo lo manipularías con JS.
+    - Generalizando es la representacion estructura de una pagina HTML
+
+Sección 2: PHP - Backend:
+1. ¿Qué diferencia existe entre $_GET y $_POST?
+    - _GET: Funcion principal obtener datos y como caracteristica el poder enviar datos por la URL
+    - _POST: Funcion prinicipal es poder enviar datos en el estructurando con un cuerpo de la solucion mas robusta esto asegura que no tenga mucha limitacion.
+
+2. ¿Por qué es importante usar password_hash?
+    - Porque permite alamcenar contrasenas cifradas y proteje la informacion de forma segura
+
+Sección 3: SQL:
+1. Diferencia entre INNER JOIN y LEFT JOIN.
+    - INNER JOIN: Devuel solo los registros que tiene coincidencia entre dos tablas
+    - LEFT JOIN: Devuleve todas las filas de la tabla izquierda y parseando Null las de la derecha si no encuentra coincidencia
+
+2. Explica clave primaria y clave foránea.
+    - Primaria: Identificador unico de una tabla
+    - Foranea: Referencia a una llave primaria en otra tabla, y tiene como objetivo establecer una relacion entre tablas.
+
+Sección 4: Python (Deseable)
+1. ¿Qué ventajas tiene Python para análisis de datos?
+    - Gran amplitud de librerias que automatizan las implementaciones.
+    - La sintaxis es mas practica y facile de comprender.
+    - Flexibiliad al momento de manipular y visualizacion de datos.
+
+2. Diferencia entre lista y diccionario.
+    - Lista: Coleccion ordenanda de elementos
+    - diccionario: Coleccion de pares clave-valor sin orden definido.
